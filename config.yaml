@@ -1,0 +1,66 @@
+schema_version: 3
+campaign:
+  name: "senfl-edition"
+  title: "Ludwig Senfl MAGNIFICAT SETTINGS MASS ORDINARIES"
+  description: "Demonstration at TTT"
+  instigator: "5521800"
+  repo_id: 1415325106
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/lets-encode"
+  ref: "staging"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+    - "sources/img/03.jpg"
+    - "sources/img/04.jpg"
+    - "sources/img/05.jpg"
+    - "sources/img/06.jpg"
+    - "sources/img/07.jpg"
+    - "sources/img/08.jpg"
+  header:
+    title: "Ludwig Senfl Edition - MAGNIFICAT SETTINGS MASS ORDINARIES"
+    composer: "Ludwig Senfl"
+    publisher: "DTO"
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 328, uly: 742, lrx: 1753, lry: 1098 }
+    header:
+      title: "[Versus 1]"
+      composer: "Ludwig Senfl"
+  - id: "piece-02"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-02/score.mei"
+    zones:
+      - { surface: 1, ulx: 201, uly: 1098, lrx: 2616, lry: 3650 }
+      - { surface: 2, ulx: 229, uly: 368, lrx: 2626, lry: 1196 }
+    header:
+      title: "[Versus 2]"
+      composer: "Ludwig Senfl"
+  - id: "piece-03"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-03/score.mei"
+    zones:
+      - { surface: 2, ulx: 229, uly: 1265, lrx: 2529, lry: 1794 }
+    header:
+      title: "[Versus 3]"
+      composer: "Ludwig Senfl"
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 1440
